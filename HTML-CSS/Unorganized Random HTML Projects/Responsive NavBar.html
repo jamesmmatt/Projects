@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="utf-8" />
+    <title>NavBar</title>
+    <link rel="stylesheet" href="css/NavBarCSS.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="#" class="toggle" id="navHamburger">
+            <i class="fas fa-bars"></i>
+        </a>
+        <a href="#" class="brand">Matthew James</a>
+
+
+        <div class="left">
+           <a href="#" class="link">Link 1</a>
+           <a href="#" class="link">Link 2</a>
+        </div>
+
+        <div class="right">
+           <a href="#" class="link">Link 3</a>
+        </div>
+    </div>
+
+    
+</body>
+
+<script>
+    const navHamburger = document.querySelector ('#navHamburger');
+
+    navHamburger.addEventListener('click', (e) => {
+        navHamburger.parentElement.classList.toggle('active');
+    })
+</script>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Matthew James | Full Stack Web Developer &amp; Programmer</title>
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+     integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+   <!-- <link rel="stylesheet" href="PorfolioStyles.css"> -->
+    <link rel="stylesheet" href="PortfolioGreen.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="name">
+                    Matthew James
+                 
+            </div>
+
+            <div class="links">
+                <p><a href="#" class="link">Home</a></p>
+                <p><a href="#" class="link">About</a></p>
+                <p><a href="#" class="link">Work</a></p>  
+            </div>
+        </div>
+
+        <div class="middle-page">
+           <span class='letter'><h1>Hi, I am Matthew James</h1></span>
+
+            <div class="description" id="web">
+                Full Stack Web Developer
+            </div>
+
+            <div class="description" id="prog">
+                Programmer
+            </div>
+
+            
+        </div>
+
+        <div class="footer">
+            
+            <div class="left">
+
+                <p><i class="fas fa-home"></i> Concordia, Kansas</p>
+            </div>
+
+            <div class="right">     
+                <p><i class="fas fa-phone"></i> (785)-614-1661</p>
+
+                <p><i class="far fa-envelope"></i> jamesmmatt@gmail.com</p>
+            </div>
+            
+        </div>
+
+    </div>
+</body>
+
+<script>
+   // Wrap every letter in a span
+$('.ml10 .letters').each(function(){
+  $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+});
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml10 .letter',
+    rotateY: [-90, 0],
+    duration: 1300,
+    delay: function(el, i) {
+      return 45 * i;
+    }
+  }).add({
+    targets: '.ml10',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+        </script>
+
+</html>
